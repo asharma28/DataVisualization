@@ -5,6 +5,6 @@ A series of graphs take you to the journey of soccer in different countries arou
 
 
 ```
-(https://varunuiuc.github.io/DataVisualization/DataGraph/WebContent/DataGraph.html)
+[Soccer Club](https://varunuiuc.github.io/DataVisualization/DataGraph/WebContent/DataGraph.html)
 ```
 
