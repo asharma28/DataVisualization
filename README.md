@@ -1,2 +1,10 @@
-#Welcome to the Soccer Club
-[Click here to navigate to data visualization of soccer representation around the world](https://varunuiuc.github.io/DataVisualization/DataGraph/WebContent/DataGraph.html)
+
+### Welcome to the Soccer Club
+
+A series of graphs take you to the journey of soccer in different countries around the world
+
+
+```
+(https://varunuiuc.github.io/DataVisualization/DataGraph/WebContent/DataGraph.html)
+```
+
