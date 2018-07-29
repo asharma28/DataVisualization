@@ -14,8 +14,19 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  
 }
 
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
 .topnav a {
   float: left;
   display: block;
@@ -24,6 +35,8 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  
+  
 }
 
 .topnav a:hover {
@@ -65,11 +78,20 @@ body {
 </head>
  
 
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active" onclick="DataGraph()">First Graph</a>
-  <a href="firstchart.html" >Second Graph</a>
-  <a href="#home">Third Graph</a>
  
+
+<div class="topnav" id="myTopnav">
+   <a  id="FirstGraph"  class="active" href="#">About</a>
+  <a  id="FirstGraph"  href="FirstChart.html">First Graph</a>
+  <a  id="SecondGraph" href="SecondChart.html">Second Graph</a>
+  <a  id="ThirdGraph" href="#home" >Third Graph</a>
+ 
+
+</div>
+
+<div>
+<p> Three charts are used in the dashboard to anlyse the data around soccer game.In the dashboard I have created map chart showing number of matches played country wise.In the map chart number of games played are showed country wise.In the dashbaoard I have given one bar chart with number of goals and matches comparison.Created two bar charts as combo charts in the dashboard. Created another chart with identifying top tournament with most of number of goals.These popular tournaments have defined the game of soccer over period of time.</p>
+
 
 </div>
 
@@ -79,27 +101,10 @@ body {
   
 </div>
 
-
-  <script type="text/javascript">
- function DataGraph()
-    {
-    	 //Data
-        var data_values = [5, 10, 30, 8, 45, 24, 16, 55, 60, 45, 32, 18, 11, 7];
-                //Create an SVG element
-                var svg = d3.select("body").append("svg").attr({
-                    "width": 450,
-                    "height": 400
-                });
-        //Create an SVG element
-        var bars = svg.selectAll("rect").data(data_values).enter().append("rect").attr("width", "25").attr("height", function(d) {
-                   return d * 5;
-               });
-bars.attr("fill","blue");
-bars.attr("x", function(d, i) {
-                return i * 30;
-            })
-    }
- </script>
+<script type="text/javascript" src="FirstChart.js"></script>
+<script type="text/javascript" src="SecondChart.js"></script>
+ 
+ 
 </body>
 
 </html>
