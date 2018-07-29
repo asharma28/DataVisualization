@@ -93,10 +93,28 @@
   <a href="SecondChart.html">Second Graph</a>
   <a href="#home">Third Graph</a>
  </div>
- <h3>Soccer graph</h3>
+
  <div>
- <strong>Data points: </strong>
- <p>In the first bar chart I have shown total number of goals scored each decade.Last decade count is little less because there are still lot of matches to be played and also 2018 being the FIFA world cup</p>
+ 
+    <p>
+
+  <b>Summary</b> <br>
+  This visualzation slide deck is highlighting number of games played over history of the game.There is constant increase in number of games over period of time except in the decade 1940-1950
+One thing to note here during this period second world war was ongoing Dates: Sep 1, 1939 – Sep 2, 1945.
+<br><br>
+
+       <b>User Interface Events</b> <br>
+  The navigation buttons at the top and the Next button at the bottom of this page represent the User Interface events.
+  User interacts by clicking on the button or menu items to navigate to various part of this visualization story.Also while mouse hovering tool tip is displayed highlighting details and drawing user attention</br></br>
+
+  <b>Annotations and tooltip</b> <br>
+  The annotation is represented by the tooltip when mouse is hovered over the bars in the chart. Also while hovering mouse over graph color of the highlighed bar changes to red from blue drwaing attention of the user.
+  <br><br>
+  <b>Triggers</b>
+  The mouse click event acts as a trigger to faciliate back and forward navigation in this visualization presentation. The mouse hover (mouseover) event is a trigger for the tooltip in the bar chart.
+  <br><br>
+  <b>Parameters</b>
+  This section is hyper linked to the previous and next section. The name of the target section is passed as an input paramter to the buttons and navgiation bar items.
  </div>
 <svg  width="960" height="460"></svg>
 <body>
@@ -134,11 +152,11 @@ var tooltip = d3.select("body").append("div").attr("class", "toolTip");
 var svg = d3.select("svg"),
     margin = {top: 20, right: 20, bottom: 60, left: 70},
     width = +svg.attr("width") - margin.left - margin.right,
-   // height = +svg.attr("height") - margin.top - margin.bottom;
+    height = +svg.attr("height") - margin.top - margin.bottom;
 
 //var margin = {top: 20, right: 20, bottom: 50, left: 70},
 //width = 960 - margin.left - margin.right,
-height = 500 - margin.top - margin.bottom;
+//height = 500 - margin.top - margin.bottom;
 
 
 var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
