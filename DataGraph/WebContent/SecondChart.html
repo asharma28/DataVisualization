@@ -75,12 +75,13 @@
     right: 0;
     top: 0;
   }
+  
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  
+ } 
 </style>
 
   <body>
@@ -114,9 +115,9 @@ The mouse click event on the legend Total matches or Total goals results in togg
 
  
   </body>
- <svg  width="200" height="200"></svg>
+ 
 <!-- load the d3.js library -->
-
+<script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
 // set the dimensions and margins of the graph
@@ -244,5 +245,5 @@ d3.csv("matchesgoals.csv", function(error, data) {
 });
 
 </script>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+
 </body>
