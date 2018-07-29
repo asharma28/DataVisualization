@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+   background-color: #ccffdd; 
 }
 .line {
   fill: none;
@@ -88,6 +89,36 @@ body {
     text-align: left;
   }
  } 
+ .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+}
+ .footer {
+  position: float;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #f5f5f5;
+}
+
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
 </style>
 
   <body>
@@ -100,8 +131,8 @@ body {
  
   <br>
  <div class="navBar">
- <a href="DataGraph.html">Home</a> 
- <a href="ThirdChart.html" >Next >></a></div>
+ <a class="button" href="DataGraph.html">Home</a> 
+ <a class="button" href="ThirdChart.html" >Next >></a></div>
  <div>
 <p>
   <h2>Goals Versus Matches</h2> <br>
@@ -125,10 +156,11 @@ The mouse click event acts as a trigger to facilitate back and forward navigatio
   The mouse click event to toggle the line graphs is utilizing the parameters in this visualization.Clicking “next>>” on a slideshow is “interactive” in that the user interacts to make something happen. It also changes the slide parameter which triggers a load of different data set and graph.
 </div>
  
+
   </body>
- 
+ <script src="https://d3js.org/d3.v4.min.js"></script>
 <!-- load the d3.js library -->
-<script src="https://d3js.org/d3.v4.min.js"></script>
+
 <script>
 
 // set the dimensions and margins of the graph
@@ -256,5 +288,13 @@ d3.csv("matchesgoals.csv", function(error, data) {
 });
 
 </script>
+ <footer class="footer   text-center">
+        <div class="container">
+          <p class="text-muted"></p>
+          <br>
+          <strong>Author <a href="https://www.linkedin.com/in/vasharma/"  target="_blank">Varun Sharma</a></strong>
+        </div>
 
-</body>
+      </footer>
+
+
