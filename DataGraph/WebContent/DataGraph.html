@@ -10,6 +10,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #82a43a; */ 
+  
 }
 
 .topnav {
@@ -45,6 +47,27 @@ body {
 
 .topnav .icon {
   display: none;
+}
+
+
+.footer {
+  position: float;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #f5f5f5;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  
+}
+
+.container .text-muted {
+  margin: 20px 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -99,36 +122,44 @@ In this project focus is to do analysis on the data and find out<br>
 Data Set : https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017
 
 <br><br>
-       <b>Hybrid Structure</b> <br>
-  This project follows the interactive slideshow hybrid structure. Users are taken through a series of slides, or scenes in interactive manner or user can pick any slide. While in each scene, users are able to mouseover each state to dig into the details they may be interested in.<br><br>
- This is based on the example in module 9.1.3 of the course : good example of this in this New York Times website visualizing Budget forecasts, and how they compare to reality. 
-<br>
-			  <b>Scene Utilization</b>
+       <h3>Summary</h3>
+  This project follows the interactive slideshow hybrid structure. Users are taken through a series of slides, or scenes in interactive manner.
+  Users can pick any slide from the top navigation bar or by using the links on the right hand corner using <strong>Next >></strong>
+  This implementation is based on the example in module 9.1.3 of the course : good example of this in this New York Times website visualizing Budget forecasts, and how they compare to reality. 
+
+<h3>Scene Utilization</h3>
 Based on slideshow structure this project utilizes the keyboard arrow keys to navigate scenes as depicted by the author. Scenes follow order in the slideshow as author drills down into details.
 There are three scenes: A home screen on about project details,a data visualization of number of games
 highlighting number of games played over history of the game,second visualization slide deck is highlighting number of games played over history of the game against goals scored and last scene takes user to top 10 nations playing soccer game
 	<br>		  
-  <b>Annotations and tooltip</b> <br>
+  <h3>Annotations and tooltip</h3>
   In scene 1 and scene 3 tooltip is used . In scene 2 the annotation is represented by the two different colors of the axis used in the multiple line graph red from blue drawing attention of the user.
   <br><br>
-  <b>Triggers</b>
+  <h3>Triggers</h3>
   In scene 2 the mouse click event on the legend Total matches or Total goals results in toggle action for the line graph.
-  The mouse click event acts as a trigger to faciliate back and forward navigation in this visualization presentation.<br>
+  The mouse click event acts as a trigger to facilitate back and forward navigation in this visualization presentation.<br>
 <br>
-  <b>Parameters</b>
+ <h3>Parameters</h3>
   This section is hyper linked to the previous and next section. The name of the target section is passed as an input paramter to the buttons and navgiation bar items.
   <br><br>
- <b>References</b><br>
-   1.Toggling element visibility in v4:
-	 <a href= "https://bl.ocks.org/d3noob/4abb9dc578abf070fe62302282a29c41"></a>
-	 <br>
-   2.Bar graph Example: 
-	  <a href= "https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4"></a>
+ <h3>References:</h3>
+   <ol>
+   <li><a href= "https://bl.ocks.org/d3noob/4abb9dc578abf070fe62302282a29c41">Toggling element visibility in v4</a></li>
+	<li> 
+   <a href= "https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4">Bar graph Example</a></li>
+   </ol>
 <br><br>
-Author><br>
-   Varun Sharma<br>
-</p>
+ 
+
  </div>
+   <footer class="footer   text-center">
+        <div class="container">
+          <p class="text-muted"></p>
+          <br>
+          <strong>Author <a href="https://www.linkedin.com/in/vasharma/"  target="_blank">Varun Sharma</a></strong>
+        </div>
+
+      </footer>
 
 <script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script> 
 
