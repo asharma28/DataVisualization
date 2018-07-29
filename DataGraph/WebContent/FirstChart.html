@@ -86,7 +86,7 @@
 }
 
 </style>
-
+<a href="DataGraph.html">Back</a>
  <h3>Soccer graph</h3>
  <div>
  <strong>Data points: </strong>
@@ -100,6 +100,8 @@
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script type="text/javascript" src="legends.js"></script>
 <script>
+
+	
 var tooltip = d3.select("body").append("div").attr("class", "toolTip");
 
 
@@ -183,6 +185,11 @@ d3.tsv("goalsyear.tsv", function(d) {
     		.on("mouseout", function(d){ tooltip.style("display", "none");});
  
 });
+
+
+
+
+
 </script>
 
 
