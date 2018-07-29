@@ -83,22 +83,48 @@
     display: block;
     text-align: left;
   }
-}
+  
 
 </style>
-<a href="DataGraph.html">Back</a>
+<!-- <a href="DataGraph.html">Back</a> -->
+<div class="topnav" id="myTopnav">
+  <a href="About.html" class="active" >About</a>
+  <a href="FirstChart.html" >First Graph</a>
+  <a href="SecondChart.html">Second Graph</a>
+  <a href="#home">Third Graph</a>
+ </div>
  <h3>Soccer graph</h3>
  <div>
  <strong>Data points: </strong>
  <p>In the first bar chart I have shown total number of goals scored each decade.Last decade count is little less because there are still lot of matches to be played and also 2018 being the FIFA world cup</p>
  </div>
-<svg width="900" height="470"></svg>
+
 <body>
-	<div class="legend3">
+	<div class="legend3" >
+	
 </div>
+
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script type="text/javascript" src="legends.js"></script>
+<script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script> 
+
+<script type="text/javascript">
+    $(function() {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+
+        // passes on every "a" tag
+        $(".topnav a").each(function() {
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).closest("a").addClass("active");
+                //for making parent of submenu active
+               $(this).closest("a").parent().parent().addClass("active");
+            }
+        });
+    });        
+</script>
 <script>
 
 	
@@ -185,6 +211,9 @@ d3.tsv("goalsyear.tsv", function(d) {
     		.on("mouseout", function(d){ tooltip.style("display", "none");});
  
 });
+
+
+
 
 
 

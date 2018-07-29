@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
  <script src="https://d3js.org/d3.v3.js"></script>
 </head>
 <meta http-equiv="content-type" content="text/html; charset=UTF8">
@@ -14,6 +15,12 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+}
+
+.topmenu ul li.active a, .topmenu ul li a:hover {
+    text-decoration:none;
+    color:#fff;
+    background:url(../images/menu_a.jpg) no-repeat center top;
 }
 
 .topnav a {
@@ -66,10 +73,12 @@ body {
  
  
 <div class="topnav" id="myTopnav">
-  <a href="About.html" class="active" >About</a>
-  <a href="FirstChart.html" >First Graph</a>
-  <a href="SecondChart.html">Second Graph</a>
-  <a href="#home">Third Graph</a>
+
+ <a href="#" class="active" >About</a>
+ <a href="FirstChart.html" >First Graph</a>
+ <a href="SecondChart.html">Second Graph</a>
+ <a href="#home">Third Graph</a>
+
  </div>
  
  <div>
@@ -79,15 +88,25 @@ body {
 <p> Three charts are used in the dashboard to anlyse the data around soccer game.In the dashboard I have created map chart showing number of matches played country wise.In the map chart number of games played are showed country wise.In the dashbaoard I have given one bar chart with number of goals and matches comparison.Created two bar charts as combo charts in the dashboard. Created another chart with identifying top tournament with most of number of goals.These popular tournaments have defined the game of soccer over period of time.</p>
 
  </div>
- 
- 
 
-<div style="padding-left:16px">
- <br>
- <br>
-  
-</div>
+<script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script> 
 
+<script type="text/javascript">
+    $(function() {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+
+        // passes on every "a" tag
+        $(".topnav a").each(function() {
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).closest("a").addClass("active");
+                //for making parent of submenu active
+               $(this).closest("a").parent().parent().addClass("active");
+            }
+        });
+    });        
+</script>
 </body>
 
 </html>
