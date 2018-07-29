@@ -47,6 +47,10 @@ body {
   display: none;
 }
 
+.navBar {
+  float: right;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -82,9 +86,9 @@ body {
  </div>
  
  <br>
- <div align="right">
+ <div class="navBar">
  
- <a href="FirstChart.html" >Next</a></div>	 
+ <a href="FirstChart.html" >Next >></a></div>	 
 		
 		  <div>
   <p>
@@ -98,22 +102,22 @@ In this project focus is to do analysis on the data and find out
 
 Data Set : https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017
 
-</br></br>
-       <b>Hybrid Structure</b> </br>
-  This project follows the interactive slideshow hybrid structure. Users are taken through a series of slides, or scenes. While in each scene, users are able to mouseover each state to dig into the details they may be interested in.</br></br>
+<br><br>
+       <b>Hybrid Structure</b> <br>
+  This project follows the interactive slideshow hybrid structure. Users are taken through a series of slides, or scenes. While in each scene, users are able to mouseover each state to dig into the details they may be interested in.<br><br>
 
 <b>Scene Utilization</b>
 Based on slideshow structure this project utilizes the keyboard arrow keys to navigate scenes as depicted by the author. Scenes follow order in the slideshow as author drills down into details.
 There are three scenes: A welcome scene, an "About This Project" , a data vizualization of number of games
 highlighting number of games played over history of the game.
-a data vizualization of average climate temperature in the USA during 2013, and a credits page. The geological map scenes are intended to show average land temperature provided by Kaggle's open source data set "GlobalLandTemperaturesByState."
-  <b>Annotations and tooltip</b> </br>
+a data visualization of average climate temperature in the USA during 2013, and a credits page. The geological map scenes are intended to show average land temperature provided by Kaggle's open source data set "GlobalLandTemperaturesByState."
+  <b>Annotations and tooltip</b> <br>
   The annotation is represented by the two different colors of the axis used in the multiple line graph red from blue drawing attention of the user.
-  </br></br>
+  <br><br>
   <b>Triggers</b>
 The mouse click event on the legend Total matches or Total goals results in toggle action for the line graph.
-  The mouse click event acts as a trigger to faciliate back and forward navigation in this visualization presentation.</br>
-</br>
+  The mouse click event acts as a trigger to faciliate back and forward navigation in this visualization presentation.<br>
+<br>
   <b>Parameters</b>
   This section is hyper linked to the previous and next section. The name of the target section is passed as an input paramter to the buttons and navgiation bar items.
   
